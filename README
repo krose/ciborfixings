@@ -1,0 +1,19 @@
+## CIBOR Fixings
+
+I have downloaded the daily files with fixings from Finansraadet.dk
+and made a tidy version of the CIBOR fixings from 2005-04-01 to 2011-04-01.
+
+I have also made the code for downloading the data available, but I
+have not put a lot of energy into documenting and explaining each step. If
+you run the code you will create and download a lot of files, so make sure
+that you save them into a separate directory.
+
+The code can easily be modified to download other files from Finansraadet.
+
+The fixings before 2005-04-01 is downloaded but discarded in the process as the
+fixings have a slightly different structure. You can use just a bit of energy if you want to and include the data back to 2004.
+
+The fixings after 2011-04-01 is downloaded but discarded in the process as
+the xls file format is to old (!?) and the standard Excel parser in R can't
+handle these files and I didn't want to use to much time on this.
+
